@@ -1,0 +1,29 @@
+[{
+	"id": 0,
+	"month": "水浸",
+	"numbers": 28
+}, {
+	"id": 1,
+	"month": "消防",
+	"numbers": 25
+}, {
+	"id": 2,
+	"month": "门禁",
+	"numbers": 21
+}, {
+	"id": 3,
+	"month": "UPS",
+	"numbers": 18
+}, {
+	"id": 4,
+	"month": "摄像头",
+	"numbers": 18
+}, {
+	"id": 5,
+	"month": "温度",
+	"numbers": 18
+}, {
+	"id": 6,
+	"month": "湿度",
+	"numbers": 18
+}]

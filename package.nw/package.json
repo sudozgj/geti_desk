@@ -1,0 +1,22 @@
+﻿{
+  "main": "login.html",
+  "name": "nwa-app",
+  "description": "demo app of node-webkit",
+  "version": "0.1.0",
+  "keywords": [ "demo", "node-webkit" ],
+  "window": {
+    "title": "node-webkit demo",
+    "icon": "link.png",
+    "toolbar": "ture", //ture  添加导航栏
+    "frame": true
+    // "width": 1800,
+    // "height": 980,
+    // "min_width": 1800,
+    // "min_height": 980,
+    // "max_width": 1800,
+    // "max_height": 980
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

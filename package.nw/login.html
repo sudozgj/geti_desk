@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#loginButton").click(function() {
+			var u = $("#username").val();
+			var p = $("#password").val();
+			if (u == "" || p == "") {
+				alert("信息不完整!");
+				return;
+			}
+			if(u=="admin" && p=="admin"){
+				location.href = "home.html";
+			}else{
+				alert("error");
+			}
+			/*
+			$.ajax({
+				type : "post",
+				url : "login",
+				data : {
+					"username" : u,
+					"password" : p
+				},
+				dataType : "json",
+				success : function(data) {
+					if (data.data)
+						location.href = "home.html";
+					else
+						alert(data.msg);
+				},
+				error : function(jqXHR) {
+					alert("error");
+				}
+			});*/
+			
+		});
+
+	});
+</script>
+</head>
+
+<body background="images/bg.jpg">
+	<div class="container">
+		<!-- Codrops top bar -->
+		<br />
+		<section>
+			<div id="container_demo">
+				<a class="hiddenanchor" id="toregister"></a> <a class="hiddenanchor"
+					id="tologin"></a>
+				<div id="wrapper">
+					<div id="login" class="animate form">
+						<form>
+							<h1>Login</h1>
+							<p>
+								<label for="username" class="uname" data-icon="u">用户名 </label> <input
+									id="username" name="username" required="required" type="text"
+									placeholder="Username" />
+							</p>
+							<p>
+								<label for="password" class="youpasswd" data-icon="p">
+									密码 </label> <input id="password" name="password" required="required"
+									type="password" placeholder="Password" />
+							</p>
+							<br>
+							<button type="button" class="btn btn-lg btn-primary btn-block"
+								id="loginButton">登录</button>
+							<br>
+							<!-- <button type="button" class="btn btn-lg btn-default btn-block"
+								id="registerButton"
+								onclick="window.location.href='register.html'">注册</button> -->
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
